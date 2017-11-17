@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+@import url("https://fonts.googleapis.com/css?family=Cedarville+Cursive");
+@import url("https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day");
+body,
+html {
+  font-family: 'Amatic SC', cursive;
+  height: 100%;
+}
+.header {
+  text-align: right;
+  color: #373737;
+}
+.page-title {
+  font-family: 'Cedarville Cursive', cursive;
+  color: #c0b283;
+}
+.subtitle {
+  font-family: 'Dawning of a New Day', cursive;
+}
+@media (min-width: 1px) {
+  body {
+    background: url("images/portrait_bw_p.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  .header {
+    margin: 20px;
+  }
+  .header .page-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 450px) {
+  body {
+    background: url("images/portrait_bw_l.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header {
+    margin: 50px;
+  }
+  .header .page-title {
+    font-size: 125px;
+    margin-bottom: 80px;
+  }
+}
