@@ -5,19 +5,21 @@ body,
 html {
   font-family: 'Amatic SC', cursive;
   height: 100%;
+  overflow: hidden;
 }
 .header {
-  text-align: right;
   color: #373737;
+  text-align: right;
 }
 .page-title {
   font-family: 'Cedarville Cursive', cursive;
   color: #c0b283;
+  margin-bottom: 30px;
 }
 .subtitle {
   font-family: 'Dawning of a New Day', cursive;
 }
-@media (min-width: 1px) {
+@media (min-width: 1px) and (max-width: 449px) {
   body {
     background: url("images/portrait_bw_p.jpg");
     background-position: center;
@@ -27,22 +29,25 @@ html {
   .header {
     margin: 20px;
   }
-  .header .page-title {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
 }
 @media (min-width: 450px) {
   body {
     background: url("images/portrait_bw_l.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
   }
   .header {
-    margin: 50px;
+    margin: 30px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
   }
-  .header .page-title {
-    font-size: 125px;
-    margin-bottom: 80px;
+  .page-title {
+    font-size: 70px;
+  }
+  .subtitle {
+    font-size: 24px;
   }
 }
