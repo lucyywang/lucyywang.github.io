@@ -11,7 +11,7 @@ html {
   color: #373737;
   text-align: right;
 }
-.page-title {
+.title {
   font-family: 'Cedarville Cursive', cursive;
   color: #c0b283;
   margin-bottom: 30px;
@@ -44,7 +44,7 @@ html {
     right: 0;
     transform: translateY(-50%);
   }
-  .page-title {
+  .title {
     font-size: 70px;
   }
   .subtitle {
